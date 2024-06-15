@@ -26,10 +26,13 @@
         header {
             grid-column: 1 / -1;
             background: #DE795A;
-            display: flex;
-            align-items: center;
+             align-items: center;
             justify-content: center;
             height: 100px;
+        }
+        ol
+        {
+         list-style-type: decimal;
         }
        
     </style>  
@@ -40,33 +43,32 @@
     <!-- Your HTML content -->
     
     <header  >
-        <h1 >	Carly's Catering Business </h1> <br></br><br>
+        <h1 >	Carly's Catering Business </h1>  
+         
+        
      </header>   
      
-          <p>	 <br>
-				 <br>
-                 <br>
-          </p>
-
-
-<form action="/html/tags/html_form_tag_action.cfm" method="get">
-Number of Guest (3-250):
-<input type="text" name="number of guests (3-250)" value="" maxlength="100" />
+          <h2> Processing Options: 	 </h2>
+		<ol>	
+			<li> View by Index</li>	 
+			<li> View by ID</li>	 
+			<li> View by Type</li>	 
+			<li> View All</li>	 
+			<li> Delete Event</li>	 
+			<li> None of the Above</li>	 
+ 
+		</ol>	
+		 
+ <form action="/html/tags/html_form_tag_action.cfm" method="get">
+Enter your Selection:
+<input type="text" name="Selection" value="" maxlength="1" />
 <input type="submit" value="Submit" />
 
 <br />
-Contact Phone (10 digits):
-<input type="text" name="contact phone" value="" maxlength="100" />
-<input type="submit" value="Submit" />
-
-<br />
-Event ID (X####):
-<input type="text" name="event ID" value="" maxlength="100" />
-<input type="submit" value="Submit" />
-
+ 
 </form>
 
- 
+
 
 
 
@@ -76,14 +78,7 @@ Event ID (X####):
 
      <div class="main-content">
      </div>
-    <footer class="footer">
-        <ul class="nav justify-content-center">
- <a class="nav-link" href="{{ url_for('event') }}"   >Event</a>
- <a class="nav-link" href="{{ url_for('estimate') }}">Estimate</a>    
- <a class="nav-link" href="{{ url_for('home') }}">Home</a>    
-</ul>
-<p>&copy; 2024  </p>
-
+ 
 
     </footer>
 </body>

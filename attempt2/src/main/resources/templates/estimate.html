@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flask App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+    <!-- Other head elements such as meta tags, scripts, etc. -->
+    
+    
+    <style>
+        header {
+          /*  background: linear-gradient(to right, lightblue, lightpink, lightblue); /* Gradient background */
+            background: hsl(211, 13%, 65%); /* Gradient background */
+            padding: 20px; /* Optional: Add some padding for better appearance */
+            text-align: left; /* Optional: Center the header text */
+           }
+      
+    </style>  
+      
+</head>
+<body>
+
+    <!-- Your HTML content -->
+    
+    <header class="header">
+        <h1 >	Carly's Catering Business </h1>
+        <h2 >   For an estimate provide :    </h2>
+    </header>   
+     
+          <p>	 <br>
+				 <br>
+                 <br>
+          </p>
+
+<ul class="nav justify-content-center">
+ <a class="nav-link" href="{{ url_for('event') }}"   >Event</a>
+ <a class="nav-link" href="{{ url_for('estimate') }}">Estimate</a>    
+ <a class="nav-link" href="{{ url_for('home') }}">Home</a>    
+</ul>
+
+
+<form action="/html/tags/html_form_tag_action.cfm" method="get">
+Number of Guest (3-250):
+<input type="text" name="number of guests (3-250)" value="" maxlength="100" />
+<input type="submit" value="Submit" />
+
+<br />
+Contact Phone (10 digits):
+<input type="text" name="contact phone" value="" maxlength="100" />
+<input type="submit" value="Submit" />
+
+<br />
+ 
+</form>
+
+ 
+
+
+
+
+
+
+
+     <div class="main-content">
+     </div>
+    <footer class="footer">
+        <p>&copy; 2024  </p>
+    </footer>
+</body>
+</html>
